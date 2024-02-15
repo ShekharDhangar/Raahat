@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/quiz.css" />
+    <link rel="stylesheet" href="../css/readingTherapy.css">
+    <link rel="icon" href="../images/favicon-enhanced.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" text="text/CSS" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&family=Itim&family=Oleo+Script+Swash+Caps&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Raahat Checkup</title>
+</head>
+<body id="main" style="background-color: #2D6A4F;">
+        <!-- Navbar-->
+        <header>
+    
+        <nav class="navbar">
+          <div class=""><a href="#"><img src="../logo.png" class="icon" alt=""></a>
+          </div>
+    
+          <div class="nav-links" id="navLinks">
+    
+            <ul>
+              <li><a href="/index.html">HOME</a></li>
+              <li><a href="#articles" class=".smooth-scroll">ARTICLES</a></li>
+              <li><a href="#quotes" class=".smooth-scroll">QUOTES </a></li>
+              <li><a href="#summary" class=".smooth-scroll">SUMMARIES</a></li>
+              <li><a href="#reading" class=".smooth-scroll">BOOKS </a></li>
+    
+            </ul>
+          </div>
+          <div class="hamburger" id="ham">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+              </path>
+            </svg>
+          </div>
+        </nav>
+        <div class="menu" id="menu">
+          <ul class="menu-link">
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="#articles">ARTICLES</a></li>
+            <li><a href="#quotes">QUOTES </a></li>
+            <li><a href="#summary">SUMMARIES</a></li>
+            <li><a href="#reading">BOOKS </a></li>
+          </ul>
+        </div>
+      </header>
+    <h1 id="title">Quiz Form</h1>
+    <p id="description">Thank you for taking the time for answering the quiz</p>
+    
+    <form id="survey-form">
+      <fieldset>
+       
+        <label for="name" id="ques1">⁠How do you feel right now?</label> 
+        <input class="box" type="text" name="ques1" placeholder="Answer" required>
+        
+        <label for="name" id="stress-label">On a scale from 1 to 10, how would you rate your stress level right now?</label> 
+        <input class="box" type="number" name="ques2"  maxlength="1" placeholder="Stress Level" required>
+        
+        <label for="email" id="sleep-label">How has your sleep been affected by stress/depression recently?</label>
+        <input class="box" type="text" name="ques3" placeholder="Answer" required>
+
+        <label for="email" id="sleep-label">Are there any coping mechanisms you currently use to manage stress?</label>
+        <input class="box" type="text" name="ques4" placeholder="Answer" required>
+
+        <label for="email" id="sleep-label"> Have there been any recent changes in your life that may contribute to increased stress?</label>
+        <input class="box" type="text" name="ques5" placeholder="Answer" required>
+
+        <label for="number" id="physical-label">Do you experience physical symptoms like headaches or muscle tension when stressed?</label> 
+        <input class="box" name="ques6" placeholder="Answer" max="120" >
+
+        <label for="number" id="physical-label">How would you describe your overall mood in the past week?</label> 
+        <input class="box" name="ques7" placeholder="Answer" max="120" >
+
+        <!-- <label for="dropdown" id="dropdown-label">How would you describe your overall mood in the past week?</label>
+         <select class="box" name="ques7" id="dropdown">
+           <option>Sad</option>
+           <option>Happy</option>
+           <option>Neutral</option>
+           <option>Motivated</option>
+           <option>Nervous</option>
+           <option>Other</option>
+        </select>   -->
+
+        <label for="number" id="physical-label">Have you noticed any changes in your appetite, either an increase or decrease, during stressful periods?</label> 
+        <input class="box" name="ques8" placeholder="Answer" max="120" >
+
+        <label for="radio" id="radio-label">Are you finding it challenging to balance work, family, and personal life?</label>
+        <div>
+          <label for="definitely"><input type="radio" id="definitely" name="ques9" value="Yes" > Yes</label>
+          <label for="maybe"><input type="radio" id="maybe" name="ques9" value="No"> No</label>
+          <label for="notsure"><input type="radio" id="notsure" name="ques9" value="Not sure"> Not sure</label>
+        </div>
+
+        <label for="radio" id="radio-label" aria-required="true">Do you feel overwhelmed or have difficulty concentrating due to stress?</label>
+        <div>
+          <label for="definitely" ><input type="radio" id="definitely" name="ques10" value="Yes"> Yes</label>
+          <label for="maybe"><input type="radio" id="maybe" name="ques10" value="No"> No</label>
+          <label for="notsure"><input type="radio" id="notsure" name="ques10" value="Not sure"> Not sure</label>
+        </div>
+
+
+        <!-- <label for="checkbox" id="checkbox-label">Do you feel overwhelmed or have difficulty concentrating due to stress?</label>
+        <div>
+         <label for="frontend"><input type="checkbox" id="frontend" name="frontend" value="1" > Front-end Projects</label>
+         <label for="backend"><input type="checkbox" id="backend" name="backend" value="2" > Back-end Projects</label>
+          <label for="courses"><input type="checkbox" id="courses" name="courses" value="3" > Additional Courses</label>
+        </div> -->
+
+        <!-- <label for="comment" id="comment-label">Any comments or suggestions?</label>
+        <textarea class="box large" id="comment" name="comment" rows="3" cols="30" placeholder="Enter your text here..." ></textarea> -->
+
+      <button class="box" type="submit" id="submit" name="submit">Submit</button>
+      </fieldset>
+    </form>
+    <iframe
+    class="space-iframe"
+    src="https://bmhchat-mentalhealth-llama-chat.hf.space"
+    frameborder="0"
+    width="850"
+    height="645"
+  ></iframe>
+  </body>
+  <script type="module" src="../js/quiz.js"></script>
+</html>

@@ -78,7 +78,7 @@
           <li><a href="html/contact.html">CONTACT US </a></li>
         </ul>
       </div>
-      <button class="login-button"><a href="html/login.html">SignUp / Login</a></button>
+      <!-- <button class="login-button"><a href="html/login.html">SignUp / Login</a></button> -->
       <div class="hamburger" id="ham">
         <i class="cancel fa-solid fa-xmark"></i>
 
@@ -200,7 +200,7 @@
           <p>
             A quick short conversation can often bring smile to our face.
           </p>
-          <a href="html/talkingTherapy.html">
+          <a href="html/quiz.html">
             Let's Explore
           </a>
         </div>
@@ -540,7 +540,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./serviceworker.js')
+        navigator.serviceWorker.register(serviceworker.js)
           .then((reg) => console.log('Success', reg.scope))
           .catch((err) => console.log('Error', err))
       })
